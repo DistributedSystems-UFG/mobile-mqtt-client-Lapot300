@@ -124,6 +124,7 @@ public class MainActivity extends AppCompatActivity {
     public void resetRecords(View view) {
         registredTemps.clear();
         adapter.notifyDataSetChanged();
+        updateResetButtonVisibility();
     }
 
     private void updateResetButtonVisibility() {
